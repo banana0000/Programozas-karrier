@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Gloria+Hallelujah&family=Grape+Nuts&family=Montserrat:ital,wght@0,100;0,300;1,200&family=Pacifico&family=Poppins:wght@100;300;500;700&family=Russo+One&family=Smooch&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --main-gray: #ebebeb;
+  --main-orange:#ffb703;
+  --main-white: #ffffff;
+}
+
+body {
+  background-color: var(--main-gray);
+}
+
+/*----------------HEADER---------------------*/
+
+/*----------------nav section---------------------*/
+
+nav {
+  background-color: var(--main-orange);
+  height: auto;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hMenu {
+  display: none;
+}
+.logo img {
+  height: 85px;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-menu li {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.nav-menu li a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.cart-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-icon img {
+  width: 1.2rem;
+}
+
+.cart-area span,
+.crat-text {
+  font-size: 1.1rem;
+  margin: 0.2rem;
+}
+
+/*----------------MAIN---------------------*/
+
+/*--------- banner section ----------*/
+
+.banner {
+  background-image: linear-gradient(rgba(241, 100, 100, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://hatterkepes.hu/hatter_kepek_szamitogepre/gyumolcs-dobozok-lekvar-hatterkep-8887.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100vh;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+/*----------------MAIN---------------------*/
+
+/*--------- welcome section ----------*/
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  flex-wrap: wrap;
+  max-width: auto;
+  margin: 2rem;
+  gap: 2.5rem;
+  height: auto;
+  margin-top: -10rem;
+}
+
+.welcome-card {
+  background-color: var(--main-white);
+  width: 15rem;
+  height: 15rem;
+  box-shadow: 5px 5px 10px black;
+  outline: 10px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-white);
+}
+
+.welcome-card button {
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(189, 48, 48),
+    rgb(255, 169, 9)
+  );
+  color: #fff;
+  border: none;
+}
+
+.welcome-card h3 {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+.products {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://tse3.explicit.bing.net/th?id=OIP.zfWeuqj0jVxpfx4k1fOMyAAAAA&pid=Api&P=0");
+  background-size: cover;
+}
+
+.brewin {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://tse4.mm.bing.net/th?id=OIP.8dZdz9j1XsoTQGjut1VovgEyDM&pid=Api&P=0");
+  background-size: cover;
+}
+
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://tse4.mm.bing.net/th?id=OIP.BJJcGWSUGG341WRvRQdloQHaE2&pid=Api&P=0");
+  background-size: cover;
+}
+
+/*----------action section------------*/
+
+#action h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0;
+  letter-spacing: 1.2rem;
+}
+
+#tips h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.action-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 5rem 2rem 5rem;
+  gap: 2.5rem;
+}
+
+.action-card {
+  background-color: var(--main-white);
+  width: auto;
+  height: 20rem;
+  padding: 1rem;
+  box-shadow: 2px 5px 10px black;
+}
+
+.action-card img {
+  height: 8rem;
+  width: 10rem;
+}
+
+.action-card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.51rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color:var(--main-orange);
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  margin: 1rem 0;
+}
+
+.action-card button {
+  background-image: linear-gradient(
+    to right,
+    rgb(189, 48, 48),
+    rgb(255, 169, 9)
+  );
+  color: #fff;
+  height: 2.2rem;
+  width: 7rem;
+  font-size: 1.2rem;
+  border: none;
+  margin: 1rem;
+}
+
+/*-----------subscribe section---------*/
+
+#subscribe {
+  padding: 5rem;
+}
+
+.subscribe-card {
+  background-color: var(--main-white);
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(230, 37, 37, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://tse4.mm.bing.net/th?id=OIP.9RTQQavmbkAZ-QL4RtpdLQHaDR&pid=Api&P=0");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-white);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.subscribe-card h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  text-align: center;
+}
+
+.subscribe-card input {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--main-white);
+  width: 15rem;
+  height: 4rem;
+  padding: 0.2rem;
+  color: var(--main-white);
+  margin: 0.5rem;
+}
+
+.subscribe-card input::placeholder {
+  color: var(--main-white);
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.licence {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 4rem 1rem 4rem;
+  margin: 2rem 0 2rem 0;
+  font-size: 1rem;
+  text-align: start;
+}
+
+.licence input[type="checkbox"] {
+  margin-left: 1.2rem;
+  width: 1.5rem;
+}
+
+input[type="submit"] {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  transition: 100ms linear;
+  background: #000;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.2);
+  border: 2px solid #000;
+}
+
+button:hover {
+  transform: scale(1.2);
+  border: 2px solid #000;
+}
+
+button {
+  transition: 100ms linear;
+}
+
+#tips h2 {
+  text-align: center;
+  margin: 5rem 0 4rem 0;
+}
+
+.tips-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 8rem 1rem;
+}
+
+.tips-card {
+  background-color: var();
+  width: 15rem;
+  min-height: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 100ms linear;
+}
+
+.big-card {
+  min-height: 34rem;
+  width: 20rem;
+  background-color: var(--main-white);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 100ms linear;
+}
+
+.big-card:hover,
+.tips-card:hover {
+  background: #000;
+  color: #fff;
+}
+
+.tips-card img {
+  width: 100%;
+}
+
+.tips-card h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.date {
+  margin: 0 0 0.5rem 0.1rem;
+}
+
+.text {
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.tips-card button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  border: none;
+  background: rgb(189, 48, 48);
+  color: #fff;
+}
+
+/*--------------------------FOOTER-------------------------------------------*/
+
+footer {
+  background-color: #4e4e4c;
+}
+
+footer img {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: ;
+}
+
+.footer-menu {
+  padding-top: 1.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color:#000;
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.soc-icon ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.soc-icon ul li {
+  display: flex;
+  list-style: none;
+}
+
+.fa-brands {
+  transition: transform 0.5s;
+  background-color: var(--main-orange);
+  }
+
+.fa-brands:hover {
+  cursor: pointer;
+  transform: translateY(15px);
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  padding:1rem;
+}
+
+/*--------------------------RESPONSIVE SETTINGS-------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .nav-menu {
+    gap: 1.2rem;
+    font-size: 1rem;
+  }
+  .cart-area {
+    gap: 2rem;
+  }
+  .nav-icon img {
+    width: 0.5rem;
+  }
+  .footer-menu ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 980px) {
+  .nav-menu {
+    display: none;
+  }
+  .hMenu {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .menu-button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid var(--main-beer);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .menu-button img {
+    width: 2rem;
+  }
+
+  .menu-button:hover {
+    cursor: pointer;
+    outline: 3px solid #000;
+    transform: scale(1.1);
+  }
+
+  .logo {
+    width: 33.33%;
+    justify-content: center;
+    text-align: center;
+  }
+  .cart-area {
+    width: 33.33%;
+    justify-content: flex-end;
+  }
+  .banner h1 {
+    font-size: 4.2;
+    letter-spacing: 0.3;
+  }
+  .welcome-card {
+    width: 40%;
+  }
+  #subscribe {
+    padding: 1rem;
+  }
+  .subscribe-card input[type="text"] {
+    margin-top: 0.5rem;
+  }
+  .licence {
+    padding: 1rem;
+  }
+
+  .tips-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tips-card {
+    width: 80%;
+    height: auto;
+  }
+  .big-card {
+    width: 80%;
+    height: auto;
+    min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 80vh;
+  }
+  .banner h1 {
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+  }
+  .banner h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .crat-text {
+    display: none;
+  }
+  .nav-icon img {
+    width: 1.8rem;
+  }
+
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .welcome-card {
+    width: 100%;
+  }
+
+  #action h2,
+  #tips h2 {
+    font-size: 1.5rem;
+  }
+  .subscribe-card {
+    width: 97%;
+    margin: 0.5rem;
+  }
+
+  .big-card {
+    height: 30rem;
+  }
+  .licence {
+    padding: 0.5rem;
+  }
+}
